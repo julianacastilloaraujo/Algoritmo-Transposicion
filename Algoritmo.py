@@ -1,62 +1,55 @@
-TAM_MAX_CLAVE = ord('Z') - ord('A') + 1
-
+# Definimos el rango de letras del alfabeto
+ALFABETO = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 def obtenerModo():
     while True:
-        print('¿Deseas encriptar o desencriptar un mensaje?')
+        print('¿Quieres encriptar o desencriptar un mensaje?')
         modo = input().lower()
         if modo in ('encriptar', 'e', 'desencriptar', 'd'):
             return modo
         else:
-            print('Ingresa "encriptar" o "e" o "desencriptar" o "d"')
-
+            print('Por favor, ingresa "encriptar" o "e" o "desencriptar" o "d"')
 
 def obtenerMensaje():
     print('Ingresa tu mensaje:')
     return input()
 
-
 def obtenerClave():
     clave = 0
     while True:
-        print('Ingresa el número de clave (1-%s)' % (TAM_MAX_CLAVE))
+        print('Ingresa un número de clave (1-26):')
         clave = int(input())
-        if (clave >= 1 and clave <= TAM_MAX_CLAVE):
+        if 1 <= clave <= 26:
             return clave
 
-
 def obtenerMensajeTraducido(modo, mensaje, clave):
-    if modo[0] == 'd':
-        clave = -clave
     traduccion = ''
 
+    mensaje = mensaje.upper()
+
     for simbolo in mensaje:
-        if simbolo.isalpha():
-            num = ord(simbolo)
-            num += clave
+        if simbolo in ALFABETO:
+            num = ALFABETO.index(simbolo)
+            
+            if modo[0] == 'd':
+                num -= clave
+            else:
+                num += clave
 
-            if simbolo.isupper():
-                if num > ord('Z'):
-                    num -= 26
-                elif num < ord('A'):
-                    num += 26
-            elif simbolo.islower():
-                if num > ord('z'):
-                    num -= 26
-                elif num < ord('a'):
-                    num += 26
+            if num < 0:
+                num += len(ALFABETO)
+            elif num >= len(ALFABETO):
+                num -= len(ALFABETO)
 
-            traduccion += chr(num)
+            traduccion += ALFABETO[num]
         else:
             traduccion += simbolo
 
     return traduccion
 
-
 modo = obtenerModo()
 mensaje = obtenerMensaje()
 clave = obtenerClave()
 
-
-print('Tu texto traducido es:')
+print('Tu mensaje traducido es:')
 print(obtenerMensajeTraducido(modo, mensaje, clave))
