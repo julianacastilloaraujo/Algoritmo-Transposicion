@@ -1,5 +1,3 @@
-# Cifrado César
-
 TAM_MAX_CLAVE = ord('Z') - ord('A') + 1
 
 
