@@ -1,4 +1,3 @@
-# Definimos el rango de letras del alfabeto
 ALFABETO = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 def obtenerModo():
