@@ -1,3 +1,5 @@
+# Realizado por 
+# Juliana Castillo
 ALFABETO = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 def obtenerModo():
