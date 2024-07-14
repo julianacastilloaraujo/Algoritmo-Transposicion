@@ -2,17 +2,18 @@
 
 > **Nota:** Este algoritmo fue realizado para la clase de Inteligencia Artificial en el periodo IIPA 2023.
 
-## ¿Qué puede realizar el código?
-- Encriptar
-- Desencriptar
-- Procesar mensajes que ingrese el usuario
+## ¿Qué puede realizar el código? 🚀
+- Encriptar 🔒
+- Desencriptar 🔓
+- Procesar mensajes que ingrese el usuario 💬
+
 > **Importante:** Desarrollado en Python 🐍
 
-## Requisitos
+## Requisitos 📋
 - Python 3.x
 - Librerías necesarias (si aplica)
 
-## Instalación
+## Instalación y Uso 🛠️
 Para clonar este repositorio y ejecutar el código, sigue estos pasos:
 
 ```bash
