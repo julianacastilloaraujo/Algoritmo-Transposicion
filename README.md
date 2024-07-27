@@ -1,6 +1,6 @@
 # Algoritmo de Transposición 🐍
 
-> **Nota:** Este algoritmo fue realizado para la clase de Inteligencia Artificial en el periodo IIPA 2023.
+> **Nota:** Este algoritmo fue realizado para la clase de Inteligencia Artificial en el periodo IIPA 2023
 
 ## ¿Qué puede realizar el código? 🚀
 - Encriptar 🔒
