@@ -1,4 +1,5 @@
 # Algoritmo de Transposición 🐍
+🔐 Matrix transposition algorithm – encrypt and decrypt messages using Python.
 
 > **Nota:** Este algoritmo fue realizado para la clase de Inteligencia Artificial en el periodo IIPA 2023
 
@@ -18,7 +19,7 @@ Para clonar este repositorio y ejecutar el código, sigue estos pasos:
 
 ```bash
 # Clona el repositorio
-git clone https://github.com/tu_usuario/algoritmo-transposicion.git
+git clone https://github.com/julianacastilloaraujo/algoritmo-transposicion.git
 
 # Navega al directorio del proyecto
 cd algoritmo-transposicion
